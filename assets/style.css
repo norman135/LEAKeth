@@ -10,7 +10,10 @@ header {
     align-items: center;
 }
 .header-heading {
+    color: black;
+    text-decoration: none;
     flex-basis: 30%;
+    padding: 0px 10px;
 }
 .search-area {
     flex-basis: 60%;
@@ -30,6 +33,10 @@ header {
 .header-button {
     padding: 7px;
 }
+
+
+/* INDEX PAGE */
+
 .article {
     width: 60%;
     padding: 20px;
@@ -38,4 +45,77 @@ header {
 .article-title {
     margin-bottom: 10px;
     color: rgb(0, 0, 97);
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 241, 241);
+    border-top: 1px solid black;
+    align-items: center;
+}
+.footer-copyright {
+    padding: 20px;
+    flex-basis: 75%;
+}
+
+
+/* READ INFORMATION PAGE */
+
+.main-article {
+    padding: 20px;
+}
+.main-article-heading {
+    margin-bottom: 20px;
+}
+.main-article-description {
+    margin-bottom: 20px;
+    width: 60%;
+}
+.upvote-link {
+    color: green;
+}
+.downvote-link {
+    color: rgb(131, 0, 0);
+}
+.main-article-related {
+    padding: 0px 20px;
+}
+
+
+/* ADD INFORMATION PAGE */
+
+.add-info {
+    padding: 20px
+}
+.add-info-heading {
+    margin-bottom: 20px;
+}
+.add-info-title-field {
+    width: 60%;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    padding: 5px;
+}
+.add-info-desc-field {
+    width: 60%;
+    height: 300px;
+    resize: none;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding: 5px;
+}
+.add-info-file-button {
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+.add-info-warning {
+    margin-bottom: 10px;
+    color: rgb(143, 0, 0);
+}
+.add-info-submit-button {
+    padding: 10px;
 }
