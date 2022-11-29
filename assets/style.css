@@ -33,18 +33,29 @@ header {
 .header-button {
     padding: 7px;
 }
-
+.header-add-link {
+    text-decoration: none;
+    color: black;
+}
 
 /* INDEX PAGE */
 
 .article {
-    width: 60%;
-    padding: 20px;
-    margin: 5px 0px;
+    text-decoration: none;
+    color: black;
 }
 .article-title {
+    padding: 5px 20px;
     margin-bottom: 10px;
     color: rgb(0, 0, 97);
+}
+.article-description {
+    padding: 5px 20px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.article-link-container:hover {
+    background-color: rgb(235, 235, 235);
 }
 footer {
     display: flex;
@@ -71,6 +82,11 @@ footer {
     margin-bottom: 20px;
     width: 60%;
 }
+.main-article-images {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px;
+}
 .upvote-link {
     color: green;
 }
@@ -79,6 +95,7 @@ footer {
 }
 .main-article-related {
     padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -112,6 +129,10 @@ footer {
     display: block;
     margin-bottom: 10px;
 }
+.upload-files {
+    width: 200px;
+    padding: 10px;
+}
 .add-info-warning {
     margin-bottom: 10px;
     color: rgb(143, 0, 0);
@@ -119,3 +140,16 @@ footer {
 .add-info-submit-button {
     padding: 10px;
 }
+
+ /* ABOUT PAGE */
+
+ .about-main {
+    padding: 20px;
+ }
+ .about-main-title {
+    margin-bottom: 20px;
+ }
+ .about-main-article {
+    width: 60%;
+    margin-bottom: 20px;
+ }

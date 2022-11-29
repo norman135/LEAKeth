@@ -1,0 +1,2 @@
+POSTS
+id | title | description | upvotes | downvotes | files_array | time_posted
