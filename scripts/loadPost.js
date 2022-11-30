@@ -9,7 +9,7 @@ const imagesContainer = document.getElementsByClassName("main-article-images-sec
 
 const getPosts = () => {
     let posts = localStorage.getItem('postsDb')
-    posts = JSON.parse(posts)
+    posts = JSON.parse(posts).posts
     for (let i = 0; i < posts.length; i++) {
         if (posts[i].id == id) {
             articleHeading.innerHTML = posts[i].title
@@ -24,8 +24,9 @@ const getPosts = () => {
                     imagesContainer.appendChild(image)
                 }
             }
+            break
         }
-        break
+        
     }
     for (let i = 0; i < posts.length; i++) {
         if (posts[i].id != id) {
