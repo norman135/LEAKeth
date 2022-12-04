@@ -55,7 +55,7 @@ abi = [
 	}
 ]
 
-contractAddress = "0xbEEB4D7bDea4AE0990086dcC69aB027eB19c0B5e"
+contractAddress = "0x8CC3942BfF18E2210171906F7b89AF425FAa0Fff"
 const contract = new ethers.Contract(contractAddress, abi, provider)
     
 const connToBC =  async ()=> {

@@ -57,7 +57,7 @@ abi = [
 	}
 ]
 
-contractAddress = "0xbEEB4D7bDea4AE0990086dcC69aB027eB19c0B5e"
+contractAddress = "0x8CC3942BfF18E2210171906F7b89AF425FAa0Fff"
 const contract = new ethers.Contract(contractAddress, abi, provider)
     
 const connToBC =  async ()=> {
@@ -96,6 +96,7 @@ const getPosts = async () => {
     for (let i = 0; i < data.length; i++) {
         if (data[i].id == id) {
             articleHeading.innerHTML = data[i].title.replace("\\comma\\", ",")
+            document.title = data[i].title.replace("\\comma\\", ",") + " - LEAKeth"
             articleDesc.innerHTML = data[i].description.replace("\\comma\\", ",")
             if (data[i].files_array.length > 0) {
                 for (let x = 0; x < data[i].files_array.length; x++) {
