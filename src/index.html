@@ -10,13 +10,13 @@
 <body>
     <header>
         <a class="header-heading" href="index.html">
-            <h1>LEAKS.eth</h1>
+            <h1>LEAKeth</h1>
         </a>
         <div class="search-area">
-            <input type="text">
-            <button>Search</button>
+            <input id="search-field" type="text">
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <button class="header-button"><a class="header-add-link" href="add.html">Add</a></button>
+        <button class="header-button"><a class="header-add-link" href="add.html"><i class="fa-solid fa-plus"></i></a></button>
     </header>
     <main class="article-container">
         
@@ -25,6 +25,10 @@
         <div class="footer-copyright">&copy; 2022/2023 LEAKS.eth</div>
         <a class="footer-about-link" href="about.html">About LEAKS.eth</a>
     </footer>
-    <script src="./scripts/loadMain.js"></script>
+    <!-- <script src="./scripts/loadMain.js"></script> -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="./scripts/loadMainR.js"></script>
+    <script src="https://kit.fontawesome.com/7d5af2a4ad.js" crossorigin="anonymous"></script>
+    <script src="./scripts/search.js"></script>
 </body>
 </html>

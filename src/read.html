@@ -10,22 +10,19 @@
 <body>
     <header>
         <a class="header-heading" href="index.html">
-            <h1>LEAKS.eth</h1>
+            <h1>LEAKeth</h1>
         </a>
         <div class="search-area">
-            <input type="text">
-            <button>Search</button>
+            <input id="search-field" type="text">
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <button class="header-button"><a class="header-add-link" href="add.html">Add</a></button>
+        <button class="header-button"><a class="header-add-link" href="add.html"><i class="fa-solid fa-plus"></i></a></button>
     </header>
     <main class="main-article">
         <h1 class="main-article-heading"></h1>
         <div class="main-article-description"></div>
         <div class="main-article-images-section"></div>
-        <a class="upvote-link" href="#">Upvote ( <span class="upvotes"></span> )</a>
-        <a class="downvote-link" href="#">Downvote ( <span class="downvotes"></span> )</a>
     </main>
-    <hr class="hr">
     <h2 class="main-article-related">Other pieces of information:</h2>
     <div class="other-info-container">
 
@@ -34,6 +31,10 @@
         <div class="footer-copyright">&copy; 2022/2023 LEAKS.eth</div>
         <a class="footer-about-link" href="about.html">About LEAKS.eth</a>
     </footer>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
     <script src="./scripts/loadPost.js"></script>
+    <script src="https://kit.fontawesome.com/7d5af2a4ad.js" crossorigin="anonymous"></script>
+    <script src="./scripts/search.js"></script>
 </body>
 </html>
