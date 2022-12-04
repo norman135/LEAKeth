@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(24, 24, 24);
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+.header-heading {
+    color: white;
+    text-decoration: none;
+    flex-basis: 30%;
+    padding: 0px 10px;
+}
+.search-area {
+    flex-basis: 60%;
+}
+.search-area input {
+    width: 60%;
+    height: 30px;
+    margin: 20px 0px;
+    font-size: 15px;
+    padding: 2px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    color: white;
+    outline: none;
+}
+.search-area button {
+    height: 30px;
+    font-size: 17px;
+    margin-left: 5px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.header-button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+.header-add-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* INDEX PAGE */
+
+.article {
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+.article-title {
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    color: rgb(86, 129, 170);
+}
+.article-description {
+    padding: 5px 20px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.article-link-container:hover {
+    background-color: rgb(43, 43, 43);
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(19, 19, 19);
+    border-top: 1px solid black;
+    align-items: center;
+    position: relative;
+    margin-top: auto;
+}
+footer a {
+    color: rgb(94, 128, 160);
+    text-decoration: none;
+}
+.footer-copyright {
+    padding: 20px;
+    flex-basis: 75%;
+}
+
+
+/* READ INFORMATION PAGE */
+
+.main-article {
+    padding: 20px;
+}
+.hr {
+    color: black;
+    background-color: grey;
+}
+.main-article-heading {
+    margin-bottom: 20px;
+}
+.main-article-description {
+    margin-bottom: 20px;
+    width: 60%;
+}
+.main-article-images {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px;
+}
+.upvote-link {
+    color: green;
+}
+.downvote-link {
+    color: rgb(131, 0, 0);
+}
+.main-article-related {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ADD INFORMATION PAGE */
+
+.add-info {
+    padding: 20px
+}
+.add-info-heading {
+    margin-bottom: 20px;
+}
+.add-info-title-field {
+    width: 60%;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+}
+.add-info-desc-field {
+    width: 60%;
+    height: 300px;
+    resize: none;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+}
+.add-info-file-button {
+    padding: 10px;
+    display: none;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.upload-files {
+    width: 200px;
+    padding: 10px;
+}
+.add-info-warning {
+    margin-bottom: 10px;
+    color: rgb(194, 69, 69);
+    font-weight: bolder;
+}
+.add-info-submit-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#meta-info {
+    color: rgba(135, 207, 235, 0.507);
+    font-weight: 100;
+}
+#missing-warning {
+    display: none;
+}
+ /* ABOUT PAGE */
+
+ .about-main {
+    padding: 20px;
+ }
+ .about-main-title {
+    margin-bottom: 20px;
+ }
+ .about-main-article {
+    width: 60%;
+    margin-bottom: 20px;
+ }
+
+
+ /* MOBILE VERSION */
+
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(24, 24, 24);
+        border-bottom: 1px solid black;
+        align-items: center;
+    }
+    .header-heading {
+        color: white;
+        text-decoration: none;
+        flex-basis: 30%;
+        padding: 0px 10px;
+        margin: 20px 0px;
+    }
+    .search-area input {
+        display: none;
+    }
+    .search-area button {
+        display: none;
+    }
+
+
+    /* READ INFO PAGE */
+
+    .main-article {
+        padding: 20px;
+    }
+    .hr {
+        color: black;
+        background-color: grey;
+    }
+    .main-article-heading {
+        margin-bottom: 20px;
+    }
+    .main-article-description {
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    .main-article-images {
+        max-width: 500px;
+        max-height: 500px;
+        margin: 0;
+    }
+    .main-article-related {
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /* ADD INFORMATION PAGE */
+
+    .add-info-title-field {
+        width: 95%;
+        height: 30px;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 17px;
+        padding: 5px;
+        background-color: black;
+        border: none;
+        color: white;
+        outline: none;
+    }
+    .add-info-desc-field {
+        width: 95%;
+        height: 300px;
+        resize: none;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 17px;
+        padding: 5px;
+        color: white;
+        background-color: black;
+        border: none;
+        outline: none;
+    }
+    .add-info-file-button {
+        padding: 10px;
+        display: none;
+        margin-bottom: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+    .upload-files {
+        width: 200px;
+        padding: 10px;
+    }
+    .add-info-warning {
+        margin-bottom: 10px;
+        color: rgb(194, 69, 69);
+        font-weight: bolder;
+    }
+    .add-info-submit-button {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    /* ABOUT PAGE */
+
+     .about-main-article {
+        width: 95%;
+     }
+}

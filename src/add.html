@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Add Information - LEAKeth</title>
+</head>
+<body>
+    <header>
+        <a class="header-heading" href="index.html">
+            <h1>LEAKeth</h1>
+        </a>
+        <div class="search-area">
+            <input id="search-field" type="text">
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="header-button"><a class="header-add-link" href="add.html"><i class="fa-solid fa-plus"></i></a></button>
+    </header>
+    <main class="add-info">
+        <h1 class="add-info-heading">Add Information</h1>
+        <form id="add-info-form" action="#">
+            <input class="add-info-title-field" type="text" name="title" placeholder="Title...">
+            <textarea class="add-info-desc-field" name="description" placeholder="Description..."></textarea>
+            <button class="add-info-file-button">
+                <input onchange="showImage(this)" type="file" name="media" style="position: absolute; z-index: 1; left: 20px; opacity: 0;">
+                Add File(s)
+            </button>
+            <div class="add-info-images">
+
+            </div>
+            <p class="add-info-warning">WARNING: Information added will not be able to be deleted!</p>
+            <p id="meta-info" class="add-info-warning">INFO: You should have the metamask extension in your browser. If you don't first install it before proceeding.</p>
+            <input class="add-info-submit-button" type="submit" value="Submit Data">
+            <p id="missing-warning" class="add-info-warning">Some data is missing!</p>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-copyright">&copy; 2022/2023 LEAKeth</div>
+        <a class="footer-about-link" href="about.html">About LEAKeth</a>
+    </footer>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/7d5af2a4ad.js" crossorigin="anonymous"></script>
+    <script src="./scripts/search.js"></script>
+</body>
+</html>
